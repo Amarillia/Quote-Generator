@@ -1,0 +1,49 @@
+body{
+	background-color: #08403E;
+	color: #B4DAD4;
+	margin: 0;
+}
+h1{
+	margin-top: 20px;
+	padding: 1%;
+	text-align: center;
+}
+
+.btn{
+	display: block;
+	background-color: #107D79;
+	color: #B4DAD4;
+	border-color: #107D79;
+	border-radius: 200px;
+	margin: 0 auto;
+}
+
+.btn:hover, .btn-focus{
+	background-color: #B4DAD4;
+	color: #107D79;
+	border-color: #B4DAD4;
+}
+
+.jumbotron{
+	background-color: #7F537C;
+	border-radius: 200px;
+	border-style: double;
+	border-width: 4px 40px 4px 40px;
+	border-color: #732D4D;
+}
+
+#quoteDisplay{
+	color: #ABA6C6;
+	font-size: 1.5em;
+	margin: 0 auto;
+	padding: 0 10% 4%;
+}
+
+a{
+	padding-left: 10%;
+}
+
+img:hover, img:focus{
+  box-shadow: 3px 0 50px 3px #fff;
+	border-radius: 50%;
+}
