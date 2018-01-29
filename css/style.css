@@ -2,15 +2,18 @@ body{
 	background-color: #08403E;
 	color: #B4DAD4;
 	margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 h1{
 	margin-top: 20px;
 	padding: 1%;
 	text-align: center;
+	text-transform: uppercase;
 }
 
 .btn{
 	display: block;
+	font-size: 1em;
 	background-color: #107D79;
 	color: #B4DAD4;
 	border-color: #107D79;
@@ -24,19 +27,12 @@ h1{
 	border-color: #B4DAD4;
 }
 
-.jumbotron{
-	background-color: #7F537C;
-	border-radius: 200px;
-	border-style: double;
-	border-width: 4px 40px 4px 40px;
-	border-color: #732D4D;
-}
-
 #quoteDisplay{
-	color: #ABA6C6;
+	color: #fff;
 	font-size: 1.5em;
-	margin: 0 auto;
+	margin: 5% auto;
 	padding: 0 10% 4%;
+	text-align: center;
 }
 
 a{
