@@ -1,52 +1,56 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 
 	<title>Random Quote Generator</title>
 	<meta name="description" content="Random Quote Generator">
-	<meta name="Edina Orban" content="Random Quote Generator">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Edina Orban" content="Edina Orban">
+
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="canonical"
-	  href="/web/tweet-button">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css rel="stylesheet">
-	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">-->
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
+	<link href="https://fonts.googleapis.com/css?family=Sahitya" rel="stylesheet">
+	<link rel="canonical" href="/web/tweet-button">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 </head>
 
 <body>
-	<div class = "container">
+	<div class="containerNav">
+		<input id="toggle" type="checkbox">
+		<label class="toggle-container" for="toggle">
+			<span class="button button-toggle"></span>
+		</label>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="container">
 		<h1>Random Quote Generator</h1>
-		<div class = "jumbotron">
-			<div class = "row text-center">
-				<div id="quoteDisplay" class = "col-xs-6">
-					<p></p>
+		<div class="jumbotron">
+			<div class="row text-center">
+				<div class="col-xs-6" id="quote-box">
+					<p id="text"></p>
+					<p id="author"></p>
+					<button id="new-quote" class="btn btn-primary" onclick="newQuoteGen()">Press it for a new quote</button>
+					<a id="tweet-quote" class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Hello%20world"
+						data-size="large">Tweet</a>
 				</div>
-				
 			</div>
-			<button class="btn btn-primary" onclick="newQuote()">Click for a new quote</button>
-			
-		<footer>
-			<a class="twitter-share-button"
-  href="https://twitter.com/intent/tweet?text=Hello%20world"></a><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/twitter_circle_gray-64.png"></a>
-</footer>
-			</div>
+		</div>
 	</div>
 
 
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <!--<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>-->
-  <script src="js/scripts.js"></script>
-  
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/scripts.js"></script>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	<script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+	<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 </body>
-<footer>
-	<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Hello%20world" data-size="large"></a>
-</footer>
+
 </html>
