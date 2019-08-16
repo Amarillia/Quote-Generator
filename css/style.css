@@ -15,7 +15,7 @@ body {
 .container {
     position: relative;
     margin: 35px auto;
-    width: 300px;
+    width: 70%;
     height: 534px;
     background-color: #533557;
     overflow: hidden;
@@ -85,11 +85,11 @@ h1 {
     background-color: #004C70;
     color: #fff;
     margin: auto;
-    border-width: 1px;
-    border-style: none;
-    border-color: none;
-    border-image: none;
+    border: none;
     padding: 10px 15px 10px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    padding: 20px 25px;
+    font-size: 20px;
 }
 
 .quote {
@@ -107,3 +107,9 @@ footer {
     padding: 1%;
     margin: 0 5%;
 }
+
+@media screen and (min-width: 1024px) {
+    #quote-box {
+        font-size: 30px;
+    }
+  }
